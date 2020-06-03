@@ -1,4 +1,5 @@
 var ParkingLotStatus = require('../constants/ParkingLotStatus');
+var Config = require('../constants/Config');
 
 class ParkingSlot {
     constructor(index = 0, status = ParkingLotStatus.Available, carNumber = null) {
@@ -22,7 +23,7 @@ class ParkingSlot {
     carLeaving(hour){
         this.status = ParkingLotStatus.Available;
         this.carNumber = null;
-        return hour <= 2 ? 10 : (10 + (hour - 2) * 10)
+        return hour <= 2 ? Config.FeeFirstTwoHours : (10 + (hour - 2) * Config.ExtraFeePerHour)
     }
 }
 
