@@ -22,7 +22,7 @@ class ParkingSlot {
     carLeaving(hour){
         this.status = ParkingLotStatus.Available;
         this.carNumber = null;
-        return hour < 2 ? 10 : (10 + (hour - 2) * 10)
+        return hour <= 2 ? 10 : (10 + (hour - 2) * 10)
     }
 }
 
