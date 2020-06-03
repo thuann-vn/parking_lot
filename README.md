@@ -16,3 +16,8 @@ This script will run mocha unit test.
     npm start
 This script will run the process with file input is: **input.txt**
 
+## Change file input
+
+    node ./app.js FILENAME
+Run with input file name: **FILENAME**
+
