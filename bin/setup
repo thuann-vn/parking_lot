@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "install libary && run test"
+cd /usr/src/parkingApp
+npm install
+npm run test
