@@ -1,5 +1,3 @@
 #!/bin/bash
-echo "Please input file name: "
-read fileName
 cd /usr/src/parkingApp
-node ./app.js $fileName
+npm start

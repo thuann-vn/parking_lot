@@ -15,7 +15,7 @@ COPY . .
 
 EXPOSE 8080
 
-CMD [ "npm", "test" ]
+CMD [ "npm", "start" ]
 
 # Keep docker run
 CMD tail -f /dev/null
